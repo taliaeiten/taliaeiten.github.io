@@ -1,0 +1,145 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+h2{position: relative;
+    padding-top: 150px;
+    left: 85px;
+    color: rgb(196, 110, 99);
+    font-family: 'Noto Serif', serif;
+    font-size: 50px
+    
+    
+    
+}
+
+p{position: relative;
+  padding-top: 20px;
+  margin-left: 85px;
+  margin-right: 500px;
+  padding-bottom: 50px;
+  font-family: 'Noto Serif', serif;
+  
+}
+
+
+
+nav{
+  padding-left:4em;
+  padding-right: 4em;
+  /* TODO: figure out no longer staying fixed */
+  position:relative;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index:10;
+  background-color: rgb(247, 230, 221);
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  display:flex;
+}
+nav li{
+  padding: 1em 0;
+  list-style-type: none;
+  padding: 25px;
+  font-size: 1.7em;
+}
+
+nav li a {
+  color:rgb(196, 110, 99);
+  font-weight: 600;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav li a:hover {
+  color:rgb(7, 35, 108);
+  opacity: 1;
+  text-decoration: none;
+}
